@@ -13,14 +13,15 @@ function Navbar (){
                                 <span className="bar"></span>
                             </button>
                             <ul className="navbar-menu">
-                                <li><a href="index.html">Home</a></li>
-                                <li><a href="members.html">Top Board</a></li>
-                                <li><a href="events.html">Events</a></li>
-                                <li><a href="join.html">Join Us</a></li>
-                                <li><a href="contact.html">Contact Us</a></li>
+                                <li><Link to="/">Home</Link></li>
+                                <li><Link to="/top-board">Top Board</Link></li>
+                                <li><Link to="/events">Events</Link></li>
+                                <li><Link to="/join">Join Us</Link></li>
+                                <li><Link to="/contact">Contact Us</Link></li>
+
                             </ul>
                         </div>
-            </nav>
+                    </nav>
 );
 }
 
