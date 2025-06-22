@@ -7,7 +7,8 @@ function Navbar (){
             return (
                     <nav className="navbar">
                         <div className="navbar-container">
-                            <a href="index.html" className="navbar-logo">Saditha</a>
+                            {/*<a href="index.html" className="navbar-logo">Saditha</a>*/}
+                            <Link to="/" className="navbar-logo">Saditha</Link>
                             <button className="navbar-toggle">
                                 <span className="bar"></span>
                                 <span className="bar"></span>
