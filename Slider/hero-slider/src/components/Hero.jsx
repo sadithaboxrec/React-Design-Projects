@@ -31,7 +31,7 @@ const ImageList = [
         title: "Title text will display here soon",
         description:
             "Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-        buttontext:"Let's Explore"
+
     },
 ];
 
@@ -64,7 +64,15 @@ const Hero = ({ handleOrderPopup }) => {
                                         onClick={handleOrderPopup}
                                         className="hero-button"
                                     >
-                                        {data.buttontext}
+                                        {data.buttontext?.trim() && (
+                                            <button
+                                                onClick={handleOrderPopup}
+                                                className="hero-button"
+                                            >
+                                                {data.buttontext}
+                                            </button>
+                                        )}
+
                                     </button>
                                 </div>
                                 <div className="hero-image-wrapper">
