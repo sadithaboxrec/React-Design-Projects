@@ -11,7 +11,7 @@ const ImageList = [
     {
         id: 1,
         img: Image1,
-        title: "Upto 50% off on all Men's Wear",
+        title: "Title text will display here soon",
         description:
             "His Life will forever be changed. Lorem ipsum dolor sit amet, consectetur adipiscing elit, " +
             "sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
@@ -20,7 +20,7 @@ const ImageList = [
     {
         id: 2,
         img: Image2,
-        title: "30% off on all Women's Wear",
+        title: "Title text will display here soon",
         description:
             "Who's there? Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
         buttontext:"Join Now"
@@ -28,7 +28,7 @@ const ImageList = [
     {
         id: 3,
         img: Image3,
-        title: "70% off on all Products Sale",
+        title: "Title text will display here soon",
         description:
             "Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
         buttontext:"Let's Explore"
