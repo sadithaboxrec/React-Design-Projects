@@ -60,10 +60,7 @@ const Hero = ({ handleOrderPopup }) => {
                                 <div className="hero-text">
                                     <h1 className="hero-title">{data.title}</h1>
                                     <p className="hero-description">{data.description}</p>
-                                    <button
-                                        onClick={handleOrderPopup}
-                                        className="hero-button"
-                                    >
+
                                         {data.buttontext?.trim() && (
                                             <button
                                                 onClick={handleOrderPopup}
@@ -73,7 +70,6 @@ const Hero = ({ handleOrderPopup }) => {
                                             </button>
                                         )}
 
-                                    </button>
                                 </div>
                                 <div className="hero-image-wrapper">
                                     <img
