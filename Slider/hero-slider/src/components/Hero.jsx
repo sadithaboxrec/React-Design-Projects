@@ -15,7 +15,7 @@ const ImageList = [
         description:
             "His Life will forever be changed. Lorem ipsum dolor sit amet, consectetur adipiscing elit, " +
             "sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-        buttontext:"Register Now"
+
     },
     {
         id: 2,
@@ -31,6 +31,7 @@ const ImageList = [
         title: "Title text will display here soon",
         description:
             "Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        buttontext:"Register Now"
 
     },
 ];
