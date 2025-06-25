@@ -1,23 +1,46 @@
-.hero-slider {
+* {
+    box-sizing: border-box;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+
+.hero-container {
+    position: relative;
     width: 100vw;
-    max-width: 1200px;
-    margin: 0 auto;
+    /*min-height: 90vh;*/
+    height: 90vh;
+    background-color: #f3f4f6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+
+    border: solid 5px red;
+}
+
+.hero-slider {
+    flex: 1;
+    width: 100%;
+    height: 100%;
+    /*max-width: 1400px;*/
+    margin: 0 0;
+    /*padding: 2rem 1rem;*/
+    border: solid 5px black;
 }
 
 .slide-image {
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    padding-left: 40px;
+    /*padding-left: 40px;*/
     color: white;
 }
 
-.slide-content {
-    /*background: rgba(0, 0, 50, 0.6);*/
-    /*padding: 30px;*/
-    /*max-width: 40%;*/
-    /*border-radius: 10px;*/
-
+.slide-content-container {
     position: absolute;
     top: 0;
     left: 0;
@@ -29,12 +52,21 @@
     color: white;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: center;
+
+
+    /*justify-content: flex-start;*/
     gap: 15px;
 }
-
+.slide-content {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: flex-start;
+    background-color: green;
+}
 .slide-content h2 {
-    margin-top: 0;
+
     margin-bottom: 15px;
     font-size: 2rem;
 }
@@ -45,14 +77,15 @@
 }
 
 .slide-content button {
-    padding: 10px 20px;
-    background-color: #0044cccc;
-    border: none;
+    background: red;
     color: white;
-    font-weight: 600;
-    border-radius: 6px;
+    padding: 0.5rem 1.25rem;
+    border: none;
+    border-radius: 9999px;
     cursor: pointer;
-    transition: background-color 0.3s;
+    transition: transform 0.2s ease-in-out;
+
+    width: fit-content;
 }
 
 .slide-content button:hover {
