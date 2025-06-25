@@ -1,6 +1,8 @@
 import React,{useState} from "react";
 import './Navbar.css'
 import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
+
 
 function Navbar (){
 
@@ -22,11 +24,11 @@ function Navbar (){
                                 <span className="bar"></span>
                             </button>
                             <ul className={`navbar-menu ${menuOpen ? "active" : ""}`}>
-                                <li><Link to="/" onClick={() => setMenuOpen(false)}>Home</Link></li>
-                                <li><Link to="/top-board" onClick={() => setMenuOpen(false)}>Top Board</Link></li>
-                                <li><Link to="/events" onClick={() => setMenuOpen(false)}>Events</Link></li>
-                                <li><Link to="/join" onClick={() => setMenuOpen(false)}>Join Us</Link></li>
-                                <li><Link to="/contact" onClick={() => setMenuOpen(false)}>Contact Us</Link></li>
+                                <li><NavLink to="/" className={({ isActive }) => isActive ? "active" : ""}   onClick={() => setMenuOpen(false)}>Home</NavLink></li>
+                                <li><NavLink to="/top-board" className={({ isActive }) => isActive ? "active" : ""}  onClick={() => setMenuOpen(false)}>Top Board</NavLink></li>
+                                <li><NavLink to="/events" className={({ isActive }) => isActive ? "active" : ""}  onClick={() => setMenuOpen(false)}>Events</NavLink></li>
+                                <li><NavLink to="/join" className={({ isActive }) => isActive ? "active" : ""}  onClick={() => setMenuOpen(false)}>Join Us</NavLink></li>
+                                <li><NavLink to="/contact" className={({ isActive }) => isActive ? "active" : ""}  onClick={() => setMenuOpen(false)}>Contact Us</NavLink></li>
 
                             </ul>
                         </div>
