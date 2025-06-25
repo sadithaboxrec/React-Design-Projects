@@ -1,4 +1,4 @@
-import Navbar from "./Navbar.jsx";
+import Navbar from "./Navbar/Navbar.jsx";
 import {BrowserRouter,Routes,Route} from "react-router-dom";
 import Members from './pages/Members.jsx'
 import Join from "./pages/Join.jsx";
