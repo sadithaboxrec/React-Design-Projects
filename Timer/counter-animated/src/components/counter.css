@@ -1,0 +1,79 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #2f3030;
+    color: #fff;
+}
+.container {
+    max-width: 80%;
+    margin: auto;
+
+}
+.hero {
+    position: relative;
+}
+.hero.counter::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url("../assets/lapinfo.jpeg");
+    height: 50vh;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: -1;
+    width: 100%;
+}
+
+
+.heading {
+    font-size: 30px;
+    color: #e0a80d;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.box {
+    /*background-color: #212222;*/
+    padding: 35px;
+}
+
+.grid3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+}
+
+.grid4 {
+    grid-template-columns: repeat(4, 1fr);
+    height: 50vh;
+    place-items: center;
+    text-align: center;
+}
+
+.counter {
+    margin-top: 80px;
+    position: relative;
+}
+
+.counter h1 {
+    margin: 0;
+    font-weight: 400;
+}
+h3{
+    font-weight: 400;
+}
+
+
+/*
+
+Zoom in DATA AOS
+As the user scrolls down the page and this element comes into view…
+
+It will zoom in from a smaller scale to normal size.
+*/
