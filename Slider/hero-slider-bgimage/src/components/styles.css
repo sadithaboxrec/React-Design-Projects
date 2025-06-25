@@ -1,0 +1,46 @@
+.hero-slider {
+    width: 100vw;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.slide-image {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 40px;
+    color: white;
+}
+
+.slide-content {
+    background: rgba(0, 0, 50, 0.6);
+    padding: 30px;
+    max-width: 40%;
+    border-radius: 10px;
+}
+
+.slide-content h2 {
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-size: 2rem;
+}
+
+.slide-content p {
+    margin-bottom: 20px;
+    line-height: 1.4;
+}
+
+.slide-content button {
+    padding: 10px 20px;
+    background-color: #0044cccc;
+    border: none;
+    color: white;
+    font-weight: 600;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.slide-content button:hover {
+    background-color: #0033aa;
+}
