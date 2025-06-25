@@ -1,8 +1,8 @@
 import React from "react";
 import './styles.css';
-import Image1 from "../assets/1.jpeg";
-import Image2 from "../assets/2jpeg.jpeg";
-import Image3 from "../assets/3.jpeg";
+import Image1 from "../assets/friends.jpg";
+import Image2 from "../assets/friends.jpg";
+import Image3 from "../assets/friends.jpg";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -36,7 +36,7 @@ const ImageList = [
 const Hero = ({ handleOrderPopup }) => {
     const settings = {
         dots: true,
-        arrows: true,
+        arrows: false,
         infinite: true,
         speed: 400,
         slidesToScroll: 1,
@@ -48,31 +48,35 @@ const Hero = ({ handleOrderPopup }) => {
     };
 
     return (
-        <div className="hero-slider">
-            <Slider {...settings}>
-                {ImageList.map(({ id, img, title, description, buttontext }) => (
-                    <div key={id} className="slide">
-                        <div
-                            className="slide-image"
-                            style={{
-                                backgroundImage: `url(${img})`,
-                                backgroundSize: "cover",
-                                backgroundPosition: "center",
-                                height: "80vh",
-                                position: "relative",
-                            }}
-                        >
-                            <div className="slide-content">
-                                <h2>{title}</h2>
-                                <p>{description}</p>
-                                {buttontext && buttontext.trim() !== "" && (
-                                    <button onClick={handleOrderPopup}>{buttontext}</button>
-                                )}
+        <div className="hero-container">
+            <div className="hero-slider">
+                <Slider {...settings}>
+                    {ImageList.map(({ id, img, title, description, buttontext }) => (
+                        <div key={id} className="slide">
+                            <div
+                                className="slide-image"
+                                style={{
+                                    backgroundImage: `url(${img})`,
+                                    backgroundSize: "cover",
+                                    backgroundPosition: "center",
+                                    height: "80vh",
+                                    position: "relative",
+                                }}
+                            >
+                                <div className="slide-content-container">
+                                    <div className="slide-content">
+                                        <h2>{title}</h2>
+                                        <p>{description}</p>
+                                        {buttontext && buttontext.trim() !== "" && (
+                                            <button onClick={handleOrderPopup}>{buttontext}</button>
+                                        )}
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                ))}
-            </Slider>
+                    ))}
+                </Slider>
+            </div>
         </div>
     );
 };
