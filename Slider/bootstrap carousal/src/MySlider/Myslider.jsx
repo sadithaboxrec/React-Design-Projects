@@ -13,19 +13,25 @@ function Myslider() {
         setIndex(selectedIndex);
     };
 
-
-    useEffect(() => {
-        const timer = setInterval(() => {
-            setIndex((prevIndex) => (prevIndex + 1) % 3);
-        }, 3000);
-
-        return () => clearInterval(timer);
-    }, []);
+    //
+    // useEffect(() => {
+    //     const timer = setInterval(() => {
+    //         setIndex((prevIndex) => (prevIndex + 1) % 3);
+    //     }, 3000);
+    //
+    //     return () => clearInterval(timer);
+    // }, []);
 
 
     return (
         <>
-            <Carousel activeIndex={index} onSelect={handleSelect}>
+            <Carousel activeIndex={index} onSelect={handleSelect}
+                      indicators={true}     // dots
+                      controls={true}      // no arrows
+                      interval={4000}       // autoplay speed
+                      pause={false}         // don't pause on hover
+                      wrap={true}           // infinite loop
+            >
                 <Carousel.Item >
                     <img src={sliderImg1} className="d-block w-100" alt="First slide" />
                     <Carousel.Caption>
