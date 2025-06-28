@@ -31,7 +31,7 @@ function Counter() {
             id: 4,
             icon: <PersonOutlined />,
             num: "6",
-            title: "More events on way",
+            title: "Events on way",
         },
     ]
 

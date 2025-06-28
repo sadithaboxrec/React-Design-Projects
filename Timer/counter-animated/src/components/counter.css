@@ -70,6 +70,11 @@ h3{
 }
 
 
+@media (max-width: 768px) {
+    .grid3, .grid4 {
+        grid-template-columns: repeat(2, 1fr); /* For phones */
+    }
+}
 /*
 
 Zoom in DATA AOS
