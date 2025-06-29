@@ -11,6 +11,8 @@
     align-items: center;
     background: #c9c9c9;
     font-family: "Poppins" , sans-serif;
+
+    flex-direction: column;
 }
 
 .event-card {
@@ -20,20 +22,10 @@
     background: white;
     box-shadow: 0 0 8px #000;
     border-radius: 20px;
+
+    margin-bottom: 32px;
 }
 
-/* .event-card .left-column {
-  width: 40%;
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.event-card .left-column img {
-  padding: 20px;
-  width: 100%;
-} */
 
 .event-card .right-column {
     width: 70%;

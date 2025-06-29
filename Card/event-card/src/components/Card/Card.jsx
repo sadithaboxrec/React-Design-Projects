@@ -5,30 +5,50 @@ import image from '../../assets/black.png';
 
 function Card() {
 
+    const eventData = [
+        {
+            id: 1,
+            title: 'Training Practical English',
+            date: '23/05/2025',
+            description: `Lorem ipsum dolor sit, amet consectetur adipisicing elit. Provident architecto accusantium
+    quod voluptatum omnis saepe maxime...Lorem ipsum dolor sit, amet consectetur adipisicing elit. Provident architecto accusantium
+    quod voluptatum omnis saepe maxime...Lorem ipsum dolor sit, amet consectetur adipisicing elit. Provident architecto accusantium
+    quod voluptatum omnis saepe maxime...`,
+            image: image
+        },
+        {
+            id: 2,
+            title: 'Advanced Communication Skills',
+            date: '30/06/2025',
+            description: `Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis magni quas...Lorem ipsum dolor sit, amet consectetur adipisicing elit. Provident architecto accusantium
+    quod voluptatum omnis saepe maxime...Lorem ipsum dolor sit, amet consectetur adipisicing elit. Provident architecto accusantium
+    quod voluptatum omnis saepe maxime...Lorem ipsum dolor sit, amet consectetur adipisicing elit. Provident architecto accusantium
+    quod voluptatum omnis saepe maxime...`,
+            image: image
+        }
+    ];
+
+
     return (
 
         <div className="container">
+            {eventData.map(event => (
             <div className="event-card">
 
                 <div className="left-column">
-                    <img src={image} alt="Event" />
+                    <img src={event.image} alt="Event" />
                 </div>
 
                 <div className="right-column">
 
                     <div className="event-name">
-                        <h1>Training Practical English</h1>
-                        <div className="date">23/05/2025</div>
+                        <h1>{event.title}</h1>
+                        <div className="date">{event.date}</div>
                     </div>
 
                     <div className="description">
                         <p>
-                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Provident architecto accusantium
-                            quod voluptatum omnis saepe maxime, tenetur eaque reiciendis, excepturi fugiat quibusdam.
-                            Deleniti expedita ratione ut eum pariatur tempore voluptas?
-                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel, totam! Esse, provident
-                            quibusdam maiores rerum earum possimus. Ipsam, veritatis voluptate debitis optio obcaecati
-                            recusandae possimus autem tempore nostrum, cumque iste.
+                            {event.description}
                         </p>
                     </div>
 
@@ -41,6 +61,7 @@ function Card() {
 
                 </div>
             </div>
+            ))}
         </div>
     );
 }
