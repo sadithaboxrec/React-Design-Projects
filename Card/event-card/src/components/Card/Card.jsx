@@ -33,10 +33,18 @@ function Card() {
                     </div>
 
                     <div className="social-icons">
-                        <a href="#" aria-label="Facebook"><i className="bi bi-facebook"></i></a>
-                        <a href="#" aria-label="Twitter"><i className="bi bi-twitter-x"></i></a>
-                        <a href="#" aria-label="Instagram"><i className="bi bi-instagram"></i></a>
-                        <a href="#" aria-label="LinkedIn"><i className="bi bi-linkedin"></i></a>
+                        <a href={event.socialLinks.facebook} target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+                            <i className="bi bi-facebook"></i>
+                        </a>
+                        <a href={event.socialLinks.twitter} target="_blank" rel="noopener noreferrer" aria-label="Twitter">
+                            <i className="bi bi-twitter-x"></i>
+                        </a>
+                        <a href={event.socialLinks.instagram} target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                            <i className="bi bi-instagram"></i>
+                        </a>
+                        <a href={event.socialLinks.linkedin} target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                            <i className="bi bi-linkedin"></i>
+                        </a>
                     </div>
 
                 </div>
