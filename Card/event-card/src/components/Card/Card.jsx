@@ -1,32 +1,12 @@
 import React from 'react';
 import './card.css';
-import image from '../../assets/black.png';
+// import image from '../../assets/black.png';
+import { eventData } from '../../data/event';
 
 
 function Card() {
 
-    const eventData = [
-        {
-            id: 1,
-            title: 'Training Practical English',
-            date: '23/05/2025',
-            description: `Lorem ipsum dolor sit, amet consectetur adipisicing elit. Provident architecto accusantium
-    quod voluptatum omnis saepe maxime...Lorem ipsum dolor sit, amet consectetur adipisicing elit. Provident architecto accusantium
-    quod voluptatum omnis saepe maxime...Lorem ipsum dolor sit, amet consectetur adipisicing elit. Provident architecto accusantium
-    quod voluptatum omnis saepe maxime...`,
-            image: image
-        },
-        {
-            id: 2,
-            title: 'Advanced Communication Skills',
-            date: '30/06/2025',
-            description: `Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis magni quas...Lorem ipsum dolor sit, amet consectetur adipisicing elit. Provident architecto accusantium
-    quod voluptatum omnis saepe maxime...Lorem ipsum dolor sit, amet consectetur adipisicing elit. Provident architecto accusantium
-    quod voluptatum omnis saepe maxime...Lorem ipsum dolor sit, amet consectetur adipisicing elit. Provident architecto accusantium
-    quod voluptatum omnis saepe maxime...`,
-            image: image
-        }
-    ];
+
 
 
     return (
