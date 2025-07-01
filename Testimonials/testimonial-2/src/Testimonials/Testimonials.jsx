@@ -69,7 +69,7 @@ function Testimonials() {
     return (
         <>
             <div className="testimonialContainer">
-                <header>What our Alumnii Say</header>
+                <header>What our Alumni Say</header>
                 <div className="feedback">
                     <div className="content">
                         <div  className="review">{current.message}</div>
