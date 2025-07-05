@@ -26,16 +26,16 @@ function MyTimeline() {
                                     <div className="timeline_text">{item.text}</div>
 
                                     <div className="social-icons">
-                                        <a href={item.socialLinks.facebook} aria-label="Facebook">
+                                        <a href={item.socialLinks.facebook} aria-label="Facebook" target="_blank" rel="noopener noreferrer">
                                             <i className="bi bi-facebook"></i>
                                         </a>
-                                        <a href={item.socialLinks.twitter} aria-label="Twitter">
+                                        <a href={item.socialLinks.twitter} aria-label="Twitter" target="_blank" rel="noopener noreferrer">
                                             <i className="bi bi-twitter-x"></i>
                                         </a>
-                                        <a href={item.socialLinks.instagram} aria-label="Instagram">
+                                        <a href={item.socialLinks.instagram} aria-label="Instagram" target="_blank" rel="noopener noreferrer">
                                             <i className="bi bi-instagram"></i>
                                         </a>
-                                        <a href={item.socialLinks.linkedin} aria-label="LinkedIn">
+                                        <a href={item.socialLinks.linkedin} aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
                                             <i className="bi bi-linkedin"></i>
                                         </a>
                                     </div>
