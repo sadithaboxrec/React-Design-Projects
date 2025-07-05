@@ -234,14 +234,14 @@ body {
     background-image: linear-gradient(#04384c, #04384c00);
     height: 80px;
     position: absolute;
-    inset: 0% 0% auto;
+    inset: 0 0 auto;
 }
 
 .overlay-fade-bottom {
     background-image: linear-gradient(to top, #026873, #02687300);
     height: 80px;
     position: absolute;
-    inset: auto 0% 0%;
+    inset: auto 0 0;
 
 }
 
