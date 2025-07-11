@@ -36,13 +36,13 @@ body {
 }
 
 .box-sub h1{
-    font-family: Syne;
+    /*font-family: Syne;*/
     font-weight: 600;
     margin-bottom: 15px;
 }
 
 .box-sub p{
-    font-family: DM Sans;
+    /*font-family: DM Sans;*/
     font-weight: 400;
     color: rgb(108, 106, 114);
 }
@@ -124,27 +124,27 @@ body {
 
 
 .img1 {
-    padding-left: 0px;
+    padding-left: 0;
     padding-top: 150px;
-    border-radius: 100% 0% 0% 0%;
+    border-radius: 100% 0 0 0;
 }
 
 .img2 {
-    padding-right: 0px;
+    padding-right: 0;
     padding-top: 150px;
-    border-radius: 0% 100% 0% 0%;
+    border-radius: 0 100% 0 0;
 }
 
 .img3 {
-    padding-left:0px;
+    padding-left:0;
     padding-bottom: 150px;
-    border-radius: 0% 0% 0% 100%;
+    border-radius: 0 0 0 100%;
 }
 
 .img4 {
-    padding-right: 0px;
+    padding-right: 0;
     padding-bottom: 150px;
-    border-radius: 0% 0% 100% 0%;
+    border-radius: 0 0 100% 0;
 }
 
 
@@ -190,8 +190,8 @@ body {
 
     .serviceimg {
         position: relative; /* Allow normal flow positioning */
-        width: 100%; /* Fit the parent serviceContainer */
-        height: auto; /* Maintain aspect ratio */
+        /*width: 100%; !* Fit the parent serviceContainer *!*/
+        /*height: auto; !* Maintain aspect ratio *!*/
         border-radius: 0; /* Remove quarter-circle effect */
         padding: 0;
         width: 200px;
